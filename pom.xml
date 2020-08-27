@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.Premvikash</groupId>
-	<artifactId>Example</artifactId>
+	<artifactId>SpringDocker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Example</name>
+	<name>SpringDocker</name>
 	<url>https://github.com/Premvikash/</url>
 	
 	<parent>
@@ -23,26 +23,19 @@
         	<repository>
             		<id>github</id>
             		<name>GitHub Premvikash</name>
-            		<url>https://maven.pkg.github.com/Premvikash/java-maven-ci-github</url>
+            		<url>https://maven.pkg.github.com/Premvikash/spring-boot-docker</url>
         	</repository>
     	</distributionManagement>
     	<scm>
-        	<url>https://github.com/Premvikash/java-maven-ci-github</url>
-        	<connection>scm:git:https://github.com/Premvikash/java-maven-ci-github.git</connection>
-        	<developerConnection>scm:git:https://github.com/Premvikash/java-maven-ci-github.git</developerConnection>
+        	<url>https://github.com/Premvikash/spring-boot-docker</url>
+        	<connection>scm:git:https://github.com/Premvikash/spring-boot-docker.git</connection>
+        	<developerConnection>scm:git:https://github.com/Premvikash/spring-boot-docker.git</developerConnection>
     	</scm>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-	
-
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<docker.image.prefix>springboot</docker.image.prefix>
 	</properties>
-
 	<dependencies>
 	     <dependency>
 	        <groupId>org.springframework.boot</groupId>
@@ -54,7 +47,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
 	<build>
 		<plugins>
 			<plugin>
@@ -81,6 +73,4 @@
 			<!-- Docker maven plugin -->
 		</plugins>
 	</build>
-	
-
 </project>
