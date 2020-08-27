@@ -37,5 +37,5 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: premvikash/docker/springdocker
+          repository: premvu/docker/springdocker
           tag_with_ref: true
